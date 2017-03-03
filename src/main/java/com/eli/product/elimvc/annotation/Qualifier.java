@@ -4,11 +4,11 @@ import java.lang.annotation.*;
 
 /**
  * @author eli
- * @description: 控制层注解
+ * @description:
  */
-@Target(ElementType.TYPE) //用于描述类
+@Target(ElementType.FIELD) //用于描述属性
 @Retention(RetentionPolicy.RUNTIME)//运行时有效
 @Documented
-public @interface Controller {
+public @interface Qualifier {
     String value() default "";
 }
